@@ -5,17 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js" //Everytime npm starts is executed nodemon will load the index.js file
+    "start": "nodemon index.js"
   },
   "author": "Gio",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.19.0", //npm install body-parser --save. Covnerts API request to JSON object ready to use on the backend
-    "connect-multiparty": "^2.2.0",   //npm install connect-multipary --save Allows uploading files to backend
-    "express": "^4.17.1",   //npm install express --save allows working with HTTP Protocol
-    "mongoose": "^5.9.17"   //npm install mongoose --save. ORM for MongoDB 
+    "body-parser": "^1.19.0",
+    "connect-multiparty": "^2.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.17"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"   //npm install nodemon --save-d. Automatically reloads the server as soon as changes are made and saved. Developemt dependency
+    "nodemon": "^2.0.4"
   }
 }
