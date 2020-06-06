@@ -8,6 +8,8 @@ var app = express(); //Executing express
 
 //Loading Routes Files
 
+var projectRoutes = require("./routes/rtProject");
+
 //Middlewares
 //Method executed before main controller action
 
@@ -18,15 +20,7 @@ app.use(bodyParser.json()); //Converts the data into JSON object
 
 //Routes
 
-app.post("/test/:id", (req, res) => {
-  console.log(req.body.name); //Data on body
-  console.log(req.query); //Data on URl
-  console.log(req.params); //URl parameter
-  res.status(200).send({
-    //Status 200 means it was completed succesfuly
-    message: "Hello World from Node JS",
-  });
-});
+app.use("/api", projectRoutes); //.use is a express method (middleware) executed through any kind of HTTP request given
 
 //Exporting
 
